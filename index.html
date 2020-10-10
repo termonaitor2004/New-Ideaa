@@ -134,10 +134,16 @@ p5{
 		</center>
 		<br />
       <center><div id="life">
-	      <form>
-	    <input type="text" id="id" />
-	    <input type="button" value="Change site" onClick="newSite()" />
-	</form>
+	  <form method="post" target="iframe">
+<input id="txtUrl" style="width:20%;" placeholder="Put the website here" name="url" type="text" />
+<input style="width:8%;" type="button" value="Go" onclick="setBrowserFrameSource(); return false;"/>
+</form>
+	      <style>
+		        function setBrowserFrameSource(){
+        var browserFrame = document.getElementById("iframe");
+        browserFrame.src= document.getElementById("txtUrl").value;
+    }
+	      </style>
 <ul>
 				<button onclick="(document.getElementById('iframe').src='https://krunker.io');">krunker</button>
   <br />
