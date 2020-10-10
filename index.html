@@ -145,13 +145,13 @@ p5{
 	<iframe id='iframe' src='newideaplaceholder2.png' width='300px' height='300px'>
 		</iframe>
     <br />
-		<button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+		<button class="button" onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
 		</center>
 		<br />
       <center><div id="life">
 	  <form method="post" target="iframe">
-<input id="txtUrl" style="width:90%;" value="https://" name="url" type="text" />
-<input style="width:25%;" type="button" value="Go" onclick="(setBrowserFrameSource()); (reset()); return false;"/>
+<input id="txtUrl" background-color='blue' style="width:90%;" value="https://" name="url" type="text" />
+<input style="width:25%;" type="button" class="buttton" value="Go" onclick="(setBrowserFrameSource()); (reset()); return false;"/>
 </form>
 	      <script>
 		        function setBrowserFrameSource(){
