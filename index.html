@@ -172,7 +172,11 @@ p5{
   <br />
           </ul>
           </div>
-
+<form>
+            <input type="text" id="txtEmail" placeholder="Enter your email address" />
+	            <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+        
+	      </form>
       </center>
   </body>
         <p5><center></center></p5>
@@ -182,7 +186,10 @@ p5{
 	
 		<br />
 		 <center><p1><b>
-	This is the start of a revolution, they will try to stop us. we will keep coming back with different iterations, different domian names. they will never win. all the exploits. we will win as idiots in a basement but we are okay with that. <b>Fuck Fremont Public Schools</b>
+	This is the start of a revolution, they will try to stop us. 
+			 we will keep coming back with different iterations, different domian names. they will never win. all the exploits. 
+			 we will win as idiots in a basement but we are okay with that. 
+			 <b>Fuck Fremont Public Schools</b>
 		</b></p1></center>
 		<script data-ad-client="ca-pub-3956215636471070" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <script>
@@ -269,6 +276,43 @@ function openFullscreen() {
 </html>
 
 <script src="filesystem:https://webmakerapp.com/temporary/script.js">
+</script>
+		<script>
+    let saveFile = () => {
+    	
+        // Get the data from each element on the form.
+    	const name = document.getElementById('txtName');
+        const age = document.getElementById('txtAge');
+        const email = document.getElementById('txtEmail');
+        const country = document.getElementById('selCountry');
+        const msg = document.getElementById('msg');
+        
+        // This variable stores all the data.
+        let data = 
+            '\r Name: ' + name.value + ' \r\n ' + 
+            'Age: ' +age.value + ' \r\n ' + 
+            'Email: ' + email.value + ' \r\n ' + 
+            'Country: ' + country.value + ' \r\n ' + 
+            'Message: ' + msg.value;
+        
+        // Convert the text to BLOB.
+        const textToBLOB = new Blob([data], { type: 'text/plain' });
+        const sFileName = 'emails.txt';	   // The file to save the data.
+
+        let newLink = document.createElement("a");
+        newLink.download = sFileName;
+
+        if (window.webkitURL != null) {
+            newLink.href = window.webkitURL.createObjectURL(textToBLOB);
+        }
+        else {
+            newLink.href = window.URL.createObjectURL(textToBLOB);
+            newLink.style.display = "none";
+            document.body.appendChild(newLink);
+        }
+
+        newLink.click(); 
+    }
 </script>
 </body>
 </html>
