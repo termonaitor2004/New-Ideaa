@@ -138,12 +138,12 @@ p5{
 <input id="txtUrl" style="width:100%;" placeholder="Put the website here" name="url" type="text" />
 <input style="width:25%;" type="button" value="Go" onclick="setBrowserFrameSource(); return false;"/>
 </form>
-	      <style>
+	      <script>
 		        function setBrowserFrameSource(){
         var browserFrame = document.getElementById("iframe");
         browserFrame.src= document.getElementById("txtUrl").value;
     }
-	      </style>
+	      </script>
 <ul>
 				<button onclick="(document.getElementById('iframe').src='https://krunker.io');">krunker</button>
   <br />
