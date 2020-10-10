@@ -11,6 +11,11 @@
 
 }
 	</script>
+	<script>
+function reset() {
+  document.getElementById("myForm").reset();
+}
+</script>
 <style id="webmakerstyle">
 	.button {
 	background-color:blue; 
@@ -146,7 +151,7 @@ p5{
       <center><div id="life">
 	  <form method="post" target="iframe">
 <input id="txtUrl" style="width:90%;" value="https://" name="url" type="text" />
-<input style="width:25%;" type="button" value="Go" onclick="setBrowserFrameSource(); return false;"/>
+<input style="width:25%;" type="button" value="Go" onclick="(setBrowserFrameSource()); (reset()); return false;"/>
 </form>
 	      <script>
 		        function setBrowserFrameSource(){
