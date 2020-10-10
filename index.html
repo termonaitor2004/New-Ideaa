@@ -1,22 +1,3 @@
-<?php
-if(isset($_POST['submit'])) {
-    $file = "data.json";
-    $arr = array(
-        'name'     => $_POST['name'],
-        'email'    => $_POST['email'],
-        'phone'    => $_POST['cell'],
-        'birthday' => $_POST['dob'],
-        'years'    => $_POST['study']
-    );
-    $json_string = json_encode($arr);
-    file_put_contents($file, $json_string);
-    echo $json_string;
-}
-?>
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -190,15 +171,7 @@ p5{
 	        		<button class="button" onclick="(document.getElementById('iframe').src='https://shellshock.io');">shellshock</button>
   <br />
           </ul>
-          </div><form name="form1" method="post" action="">
-      
-        <p>
-            <label for="email">Email: </label>
-            <input type="email" name="email" id="email">
-        </p>
-<p style="text-align: center;">
-            <input type="submit" name="submit" id="submit" value="Submit">
-        </p>
+          </div>
       </center>
   </body>
         <p5><center></center></p5>
