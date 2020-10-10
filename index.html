@@ -2,7 +2,15 @@
 <html>
 <head>
 <meta charset="UTF-8" />
+<script>
+	function newSite() {
+  var site = $('#id').val();
+  var iframe = document.getElementById('iframe');
+  iframe.src = site;
+  iframe.src = iframe.src;
 
+}
+	</script>
 <style id="webmakerstyle">
 body {
   background-color: black;
@@ -126,6 +134,10 @@ p5{
 		</center>
 		<br />
       <center><div id="life">
+	      <form>
+	    <input type="text" id="id" />
+	    <input type="button" value="Change site" onClick="newSite()" />
+	</form>
 <ul>
 				<button onclick="(document.getElementById('iframe').src='https://krunker.io');">krunker</button>
   <br />
