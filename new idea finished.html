@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+
+<style id="webmakerstyle">
+body {
+  background-color: black;
+  color: blue;
+	border-style:solid;
+	border-color:blue;
+				font-style: helvetica;
+}
+			#phmf{
+				border-style:dashed;
+				border-width:2px;
+				border-color: darkblue;
+			}
+			#helloworld{
+				border-color: blue;
+				border-style: solid;
+				border-width: 3px;
+			}
+#life{
+  border-style: ridge;
+  border-width: 5px;
+  color: white;
+  border-color: blue;
+  width: 150px;
+}
+			#dinefick{
+				text-align:center;
+				color: red;
+			}
+body1{
+  color:white;
+}
+ul {
+  color:blue;
+	text-align: left;
+}
+h1 {
+  text-align:center;
+}
+p1 {
+  font-style:
+  text-indent: 50px;
+	color: maroon;
+}
+p{
+  text-align: left;
+}
+#sucks{
+	border-style:ridge;
+	border-width:3px;
+	border-color:blue;
+}
+body2{
+color:white;
+}
+p5{
+	color:red;
+}
+			p10 {
+				text-align:left;
+			}
+</style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+	
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+      <title>HIGH</title>
+      <script type="text/javascript" src="date_time.js"></script>
+      
+		<script type="text/javascript">
+			function date_time(id)
+{
+        date = new Date;
+        year = date.getFullYear();
+        month = date.getMonth();
+        months = new Array('January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December');
+        d = date.getDate();
+        day = date.getDay();
+        days = new Array('Sunday,', 'Monday,', 'Tuesday,', 'Wednesday,', 'Thursday,', 'Friday,', 'Saturday,');
+        h = date.getHours();
+        if(h<10)
+        {
+                h = "0"+h;
+        }
+        m = date.getMinutes();
+        if(m<10)
+        {
+                m = "0"+m;
+        }
+        s = date.getSeconds();
+        if(s<10)
+        {
+                s = "0"+s;
+        }
+        result = ''+days[day]+' '+months[month]+' '+d+' '+year+' '+h+':'+m+':'+s;
+        document.getElementById(id).innerHTML = result;
+        setTimeout('date_time("'+id+'");','1000');
+        return true;
+}
+			</script>
+  </head>
+    <div id="helloworld">
+<div id="phmf"><center><h8>"HIGH"</h8></center></div>
+	</div>
+<div id="sucks">
+	<center>
+  <body>
+      <span id="date_time"></span>
+            <script type="text/javascript">window.onload = date_time('date_time');</script>
+
+<center>
+	<iframe id='iframe' src='newideaplaceholder.jpg' width='150px' height='150px'>
+		</iframe>
+    <br />
+		<button onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
+		</center>
+		<br />
+      <center><div id="life">
+<ul>
+				<button onclick="(document.getElementById('iframe').src='https://krunker.io');">krunker</button>
+  <br />
+  				<button color="blue" onclick="(document.getElementById('iframe').src='https://new-en.tankionline.com/play/?lang=en');">tanki</button>
+  <br />
+          </ul>
+          </div>
+      </center>
+  </body>
+        <p5><center></center></p5>
+	<tyle type="text/js">
+		<p id="dinefick"></p><center>Until my Death</center>
+		<br />
+	
+		<br />
+		 <center><p1><b>
+	Please do not screw with the code.
+		tell me if u want another web site added
+		</b></p1></center>
+<script>
+var countDownDate = new Date("december 22, 2026").getTime();
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  document.getElementById("dinefick").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("dinefick").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+<style>
+#div1 {
+  font-size:48px;
+}
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id='8'>
+<center><div id="div1" class="fa"></div></center>
+<script>
+function hand() {
+  var a;
+  a = document.getElementById("div1");
+  a.innerHTML = "&#xf25a;";
+  setTimeout(function () {
+      a.innerHTML = "&#xf256;";
+    }, 500);
+  setTimeout(function () {
+      a.innerHTML = "&#xf259;";
+    }, 1000);
+  setTimeout(function () {
+      a.innerHTML = "&#xf256;";
+    }, 1500);
+}
+hand();
+setInterval(hand, 600);
+</script>
+</body>
+	<script>
+/* Get the element you want displayed in fullscreen */ 
+var elem = document.getElementById("iframe");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  /* If fullscreen mode is available, show the element in fullscreen */
+  if (
+    document.fullscreenEnabled || /* Standard syntax */
+    document.webkitFullscreenEnabled || /* Chrome, Safari & Opera */
+    document.mozFullScreenEnabled || /* Firefox */
+    document.msFullscreenEnabled /* IE/Edge */
+  ) {
+   
+    /* Show the element in fullscreen */
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen(); /* Standard syntax */
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+    
+  }
+}
+</script>
+        <footer>
+	<center>
+	Domain: <b>Freenom</b>
+	<br />
+	Creator: <b>T3rm01</b>
+	<br />
+	Contact: <b>astroid010203@gmail.com</b>
+		</center>
+		</footer>
+</html>
+
+<script src="filesystem:https://webmakerapp.com/temporary/script.js">
+</script>
+</body>
+</html>
