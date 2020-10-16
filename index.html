@@ -166,7 +166,7 @@ p5{
 	
     <br />
 		<button class="button" onclick="openFullscreen();">Open Game in Fullscreen Mode</button>
-	<button class="button" onclick="(hope()');">refresh</button>
+	<button class="button" onclick="(document.getElementById('iframe').src='newideaplaceholder3.png');">reset to fabulous image</button>
 		</center>
 		<br />
       <center><div id="life">
@@ -312,22 +312,5 @@ function openFullscreen() {
 </script>
 		</center>
 		</footer>
-<script>
-function hope()
-{ 
-    
-var refresh = document.getElementById('iframe');
-/* You can also use -->
-   refresh.contentWindow.location.reload( true );
-   but not all browser support this function!
-   So i wil just perform a simple trick to get things done... Enjoy
-   Code is as follows:
- */
-  timer = setTimeout('hope()', 1000);
-if ( timer == 5 ) { clearTimeout( timer ); 
-refresh.src = 'newideaplaceholder3.png'; //or you can just set this = refresh.src
- 
 
-}
-</script>
 </html>
