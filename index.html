@@ -56,34 +56,6 @@
     }
 	  </script>
 		<script>
-/* Get the element you want displayed in fullscreen */ 
-var elem = document.getElementById("iframe");
-
-/* Function to open fullscreen mode */
-function openFullscreen() {
-  /* If fullscreen mode is available, show the element in fullscreen */
-  if (
-    document.fullscreenEnabled || /* Standard syntax */
-    document.webkitFullscreenEnabled || /* Chrome, Safari & Opera */
-    document.mozFullScreenEnabled || /* Firefox */
-    document.msFullscreenEnabled /* IE/Edge */
-  ) {
-   
-    /* Show the element in fullscreen */
-    if (elem.requestFullscreen) {
-      elem.requestFullscreen(); /* Standard syntax */
-    } else if (elem.mozRequestFullScreen) { /* Firefox */
-      elem.mozRequestFullScreen();
-    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
-      elem.webkitRequestFullscreen();
-    } else if (elem.msRequestFullscreen) { /* IE/Edge */
-      elem.msRequestFullscreen();
-    }
-    
-  }
-}
-</script>
-		<script>
 var countDownDate = new Date("december 22, 2026").getTime();
 var x = setInterval(function() {
   var now = new Date().getTime();
@@ -280,6 +252,34 @@ setInterval(hand, 600);
 			 we will win as idiots in a basement but we are okay with that. 
 			 <b>Fuck Fremont Public Schools</b>
 		</p></center>
+	    <script>
+/* Get the element you want displayed in fullscreen */ 
+var elem = document.getElementById("iframe");
+
+/* Function to open fullscreen mode */
+function openFullscreen() {
+  /* If fullscreen mode is available, show the element in fullscreen */
+  if (
+    document.fullscreenEnabled || /* Standard syntax */
+    document.webkitFullscreenEnabled || /* Chrome, Safari & Opera */
+    document.mozFullScreenEnabled || /* Firefox */
+    document.msFullscreenEnabled /* IE/Edge */
+  ) {
+   
+    /* Show the element in fullscreen */
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen(); /* Standard syntax */
+    } else if (elem.mozRequestFullScreen) { /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) { /* Chrome, Safari & Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) { /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
+    
+  }
+}
+</script>
 	</body>
     <footer>
 	<center>
