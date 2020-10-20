@@ -292,6 +292,7 @@ function openFullscreen() {
 
 setTimeout('refresh()', 3000);
 			</script>
+	    <center><input id="watermark" value="FUCK FPS" /></center>
 	</body>
     <footer>
 	<center>
@@ -302,16 +303,21 @@ setTimeout('refresh()', 3000);
 	Contact: <b>astroid010203@gmail.com</b>		
 		</center>
 		</footer>
-	<script type="text/javascript">
-    var prevent_bust = 0;
-    window.onbeforeunload = function() { prevent_bust++; }
-    setInterval(function() {
-      if (prevent_bust > 0) {
-        prevent_bust -= 2;
-        window.top.location = 'https://t3rm01.tk';
-        /* Replace URL with a page that actually responds with HTTP status code 204 */
-      }
-    }, 1);
+	<script>
+				function watermark(text) {
+  var body = document.getElementsByTagName('body')[0];
+  var bg = "url(\"data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='100px' width='100px'>" +
+    "<text transform='translate(20, 100) rotate(-45)' fill='rgb(0,0,128)' font-size='25' >" + text + "</text></svg>\")";
+  body.style.backgroundImage = bg
+}
+
+//for this test
+var input = document.getElementById('watermark');
+watermark(input.value);
+input.addEventListener('input', function(evt) {
+  watermark(this.value);
+});
+//# sourceURL=userscript.js
 </script>
 
 </html>
