@@ -11,6 +11,9 @@
         <meta charset="UTF-8" />
               <meta name="viewport" content="width=device-width" />
     <script>
+	    function fun() {  
+location.reload();  
+} 
 	function newSite() {
     var site = $('#id').val();
     var iframe = document.getElementById('iframe');
@@ -199,6 +202,7 @@ var x = setInterval(function() {
 	<button class="iframe-buttons" onclick="(document.getElementById('iframe').data='newideaplaceholder3.png');">reset to fabulous image</button>
 		</center>
 		<br />
+		<button class="iframe-buttons" onclick="fun()"></button>
 
         <div text-align="center" id="links">
 	  <form id="form" method="post" align='left' target="iframe" >
